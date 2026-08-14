@@ -146,3 +146,38 @@ nav a:hover {
     font-size: 0.95rem;
     color: #555;
 }
+
+/* --- KONTAKT A MAPA --- */
+.kontakt-obsah {
+    display: flex;
+    flex-wrap: wrap; /* Zaručí správné zobrazení na mobilu */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.kontakt-info {
+    flex: 1; /* Levý sloupec zabere stejné místo jako pravý */
+    min-width: 250px;
+}
+
+.kontakt-info p {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.oteviraci-doba-nadpis {
+    color: #e63946;
+    margin: 20px 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.kontakt-mapa {
+    flex: 1; /* Pravý sloupec */
+    min-width: 250px;
+}
+
+/* Ostranění roštů a zaoblení rohů u mapy */
+.kontakt-mapa iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
