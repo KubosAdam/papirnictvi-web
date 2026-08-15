@@ -181,3 +181,18 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* --- STYLY PRO OBRÁZEK OTEVÍRACÍ DOBY --- */
+
+.oteviraci-doba-obrazek-container {
+    margin-top: 30px; /* Mezera od textových kontaktů nahoře */
+    text-align: center; /* Zarovná obrázek na střed, pokud je menší než kontejner */
+}
+
+.oteviraci-doba-obrazek {
+    max-width: 100%; /* Obrázek se nikdy neroztáhne více, než je jeho kontejner */
+    height: auto; /* Zachová správný poměr stran */
+    max-height: 400px; /* !!! DOPORUČENO: Omezíme jeho výšku, aby nezabíral půl obrazovky. Tuto hodnotu si můžete upravit. !!! */
+    border-radius: 8px; /* Zaoblí rohy pro modernější vzhled */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Přidá jemný stín pro zvýraznění */
+}
