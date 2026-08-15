@@ -245,8 +245,8 @@ footer {
 
 .o-nas-fotka {
     flex: 1; /* Pravý sloupec */
-    min-width: 250px;
-    max-width: 320px; /* Zabrání fotce, aby byla zbytečně obrovská */
+    min-width: 175px;
+    max-width: 250px; /* Zabrání fotce, aby byla zbytečně obrovská */
 }
 
 .fotka-budovy {
