@@ -205,4 +205,54 @@ footer {
     padding: 20px;
     background-color: #1d3557;
     color: white;
-}   
+}  
+
+/* --- STYLY PRO SEKCI O NÁS --- */
+.podnadpis-onas {
+    color: #2b2b2b;
+    font-size: 1.1rem;
+    margin: 20px 0 10px 0;
+}
+
+.seznam-onas {
+    list-style-type: square; /* Udělá hezké hranaté odrážky */
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.seznam-onas li {
+    margin-bottom: 8px;
+}
+
+.podpis-vedouci {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #e63946;
+}
+
+/* --- ROZLOŽENÍ: TEXT A FOTKA V SEKCI O NÁS --- */
+.o-nas-obsah {
+    display: flex;
+    flex-wrap: wrap; /* Zaručí, že na mobilu skočí fotka pod text */
+    gap: 40px; /* Mezera mezi textem a fotkou */
+    align-items: flex-start; /* Zarovná fotku k hornímu okraji (k první větě) */
+}
+
+.o-nas-text {
+    flex: 1; /* Levému sloupci dovolí roztáhnout se */
+    min-width: 300px;
+}
+
+.o-nas-fotka {
+    flex: 1; /* Pravý sloupec */
+    min-width: 250px;
+    max-width: 320px; /* Zabrání fotce, aby byla zbytečně obrovská */
+}
+
+.fotka-budovy {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Zaoblí rohy fotky, aby ladila s mapou a dalším designem */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Přidá jemný stín */
+    margin-top: 5px; /* Mírně odskočí od horního okraje, aby lícovala s textem */
+}
