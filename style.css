@@ -147,17 +147,20 @@ nav a:hover {
     color: #555;
 }
 
-/* --- KONTAKT A MAPA --- */
+/* --- KONTAKT, OBRÁZEK A MAPA --- */
 .kontakt-obsah {
     display: flex;
-    flex-wrap: wrap; /* Zaručí správné zobrazení na mobilu */
-    gap: 30px;
-    margin-top: 20px;
+    flex-wrap: wrap; /* Na mobilech to skočí pod sebe */
+    gap: 40px; /* Mezera mezi sloupcem s textem a mapou */
+    align-items: flex-start; /* Zarovná text i mapu pěkně k hornímu okraji */
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .kontakt-info {
-    flex: 1; /* Levý sloupec zabere stejné místo jako pravý */
-    min-width: 250px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px; /* Omezíme šířku, aby se sloupec neroztahoval přes celou obrazovku */
 }
 
 .kontakt-info p {
@@ -165,34 +168,27 @@ nav a:hover {
     font-size: 1.05rem;
 }
 
-.oteviraci-doba-nadpis {
-    color: #e63946;
-    margin: 20px 0 10px 0;
-    font-size: 1.2rem;
+/* Zmenšení a formátování obrázku otevírací doby */
+.oteviraci-doba-obrazek {
+    width: 100%;
+    max-width: 280px; /* Zde jsme obrázek výrazně zmenšili */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 20px; /* Odskočení od textu s adresou */
 }
 
 .kontakt-mapa {
-    flex: 1; /* Pravý sloupec */
-    min-width: 250px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px; /* Omezíme šířku mapy */
 }
 
-/* Ostranění roštů a zaoblení rohů u mapy */
+/* Úprava velikosti mapy, aby ladila k obrázku */
 .kontakt-mapa iframe {
+    width: 100%;
+    height: 350px; /* Pevná výška mapy */
+    border: 0;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* --- STYLY PRO OBRÁZEK OTEVÍRACÍ DOBY --- */
-
-.oteviraci-doba-obrazek-container {
-    margin-top: 30px; /* Mezera od textových kontaktů nahoře */
-    text-align: center; /* Zarovná obrázek na střed, pokud je menší než kontejner */
-}
-
-.oteviraci-doba-obrazek {
-    max-width: 100%; /* Obrázek se nikdy neroztáhne více, než je jeho kontejner */
-    height: auto; /* Zachová správný poměr stran */
-    max-height: 400px; /* !!! DOPORUČENO: Omezíme jeho výšku, aby nezabíral půl obrazovky. Tuto hodnotu si můžete upravit. !!! */
-    border-radius: 8px; /* Zaoblí rohy pro modernější vzhled */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Přidá jemný stín pro zvýraznění */
 }
