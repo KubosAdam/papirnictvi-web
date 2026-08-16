@@ -267,3 +267,57 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Přidá jemný stín */
     margin-top: 5px; /* Mírně odskočí od horního okraje, aby lícovala s textem */
 }
+
+/* --- ČASTO KLADENÉ DOTAZY (FAQ) --- */
+.faq-kontejner {
+    margin-top: 20px;
+}
+
+.faq-polozka {
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+}
+
+/* Nastavení samotné otázky */
+.faq-polozka summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #2b2b2b;
+    position: relative;
+    padding-right: 30px;
+    list-style: none; /* Odstraní základní ošklivou šipku */
+}
+
+/* Skrytí šipky pro prohlížeče, které ignorují předchozí příkaz */
+.faq-polozka summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Naše vlastní ikonka + pro rozbalení */
+.faq-polozka summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    font-size: 1.5rem;
+    color: #e63946;
+    font-weight: normal;
+}
+
+/* Změna na - když je otázka rozbalená */
+.faq-polozka[open] summary::after {
+    content: "-";
+}
+
+/* Nastavení odpovědi */
+.faq-polozka p {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #555;
+    font-size: 1rem;
+}
