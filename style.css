@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* TÍMTO ZAPNEME PLYNULÉ ROLOVÁNÍ (Smooth Scrolling) */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -377,4 +381,11 @@ footer {
     border-top: 1px solid #eee;
     color: #555;
     font-size: 1rem;
+}
+
+
+/* Efekt po najetí myší */
+.znacka:hover {
+    color: #e63946; /* Tvoje DUHA červená */
+    transform: scale(1.08); /* Nápis se lehce a plynule zvětší */
 }
