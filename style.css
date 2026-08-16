@@ -210,13 +210,70 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* --- PATIČKA --- */
+/* --- PATIČKA WEBŮ --- */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1d3557;
+    background-color: #1d3557; /* Tmavě modrá, elegantní barva */
+    color: #f1f1f1;
+    padding: 50px 20px 20px 20px;
+    font-size: 0.95rem;
+    margin-top: 50px; /* Odskočení od posledního obsahu */
+}
+
+.paticka-obsah {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.paticka-sloupec {
+    flex: 1;
+    min-width: 250px;
+}
+
+.paticka-sloupec h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e63946; /* Červená podtrhávací linka */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.paticka-sloupec p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Modré tlačítko pro Facebook */
+.facebook-odkaz {
+    display: inline-block;
+    background-color: #1877F2; 
     color: white;
-}  
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.facebook-odkaz:hover {
+    background-color: #166fe5;
+    transform: translateY(-2px); /* Při najetí myší lehce povyskočí */
+    color: white;
+}
+
+.paticka-spodek {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1); /* Jemná oddělovací čára */
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
 
 /* --- STYLY PRO SEKCI O NÁS --- */
 .podnadpis-onas {
