@@ -12,6 +12,17 @@ body {
     line-height: 1.6;
 }
 
+/* --- HORNÍ INFORMAČNÍ PROUŽEK --- */
+.top-bar {
+    background-color: #e63946; /* Výrazná, ale příjemná červená */
+    color: #ffffff; /* Bílý text */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
 /* --- HLAVIČKA A LOGO (Hero Banner) --- */
 header {
     /* Zde je velká ilustrační fotka roztažená přes celou šířku */
